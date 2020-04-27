@@ -36,7 +36,7 @@ using System.Runtime.CompilerServices;
 //
 // If log4net is strongly named it still allows partially trusted callers
 //
-[assembly: System.Security.AllowPartiallyTrustedCallers]
+//[assembly: System.Security.AllowPartiallyTrustedCallers]
 #endif
 
 #if (NET_4_0)
@@ -105,9 +105,9 @@ using System.Runtime.CompilerServices;
 #elif (NET)
 [assembly: AssemblyInformationalVersionAttribute("2.1.0.0-.NET")]
 [assembly: AssemblyTitle("Apache log4net for .NET Framework")]
-#elif (NETSTANDARD1_3)
-[assembly: AssemblyInformationalVersionAttribute("2.1.0.0-.NET Core 1.0")]
-[assembly: AssemblyTitle("Apache log4net for .NET Core 1.0")]
+#elif (NETSTANDARD)
+[assembly: AssemblyInformationalVersionAttribute("2.1.0.0-.NET Core 2.0")]
+[assembly: AssemblyTitle("Apache log4net for .NET Core 2.0")]
 #elif (NETCF)
 [assembly: AssemblyInformationalVersionAttribute("2.1.0.0-.NETCF")]
 [assembly: AssemblyTitle("Apache log4net for .NET Compact Framework")]
